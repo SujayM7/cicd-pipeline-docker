@@ -1,4 +1,4 @@
-FROM node:carbon  /*fromwhich server*/
+FROM node:carbon /*fromwhich server*/
 WORKDIR /usr/src/app
 COPY package*.json ./ /*Ex:POM file in JAVA*/
 RUN npm install /*installing into the imaga*/
