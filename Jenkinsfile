@@ -28,8 +28,8 @@ pipeline {
 			}
 			steps{
 				script{
-					docker.withRegistry('https://registry.hub.docjer.com','docker_hub_login'){
-					app.push("$(env.BUILD_NUMBER")
+					docker.withRegistry('https://registry.hub.docker.com','guruprasadmhl'){
+					app.push("${env.BUILD_NUMBER"})
 					app.push("latest")
 					}
 				}
