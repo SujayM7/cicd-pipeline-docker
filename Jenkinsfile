@@ -3,7 +3,7 @@ pipeline {
     stages{
 	stage('Build'){
 		steps{
-			echo "Running build autoation",
+			echo "Running build autoation"
 			sh './gradlew build --no -daemon'
 			arcgiveArtifacts artifacts: 'dist/trainSchedule.zip'
 			}
