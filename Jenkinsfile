@@ -18,9 +18,10 @@ pipeline {
 					app.inside{
 					sh 'echo $(curl http://34.213.163.2:8081)'
 					}
+				}
 			}
+		
 		}
 	
 	}
-
 }
