@@ -14,9 +14,9 @@ pipeline {
 		}
 			steps{
 				script{
-					app = docker.build("<docker_login_id>/node-app")
+					app = docker.build("guruprasadmhl/node-app")
 					app.inside{
-					sh "echo $(curl localhost:8080)'
+					sh "echo $(curl http://34.213.163.2:8080)'
 					}
 			}
 		}
